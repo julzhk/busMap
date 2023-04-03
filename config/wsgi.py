@@ -1,5 +1,5 @@
 """
-WSGI config for htmx_starter project.
+WSGI config for bus_mapper project.
 
 This module contains the WSGI application used by Django's development server
 and any production WSGI deployments. It should expose a module-level variable
@@ -20,9 +20,9 @@ from pathlib import Path
 from django.core.wsgi import get_wsgi_application
 
 # This allows easy placement of apps within the interior
-# htmx_starter directory.
+# bus_mapper directory.
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
-sys.path.append(str(BASE_DIR / "htmx_starter"))
+sys.path.append(str(BASE_DIR / "bus_mapper"))
 # We defer to a DJANGO_SETTINGS_MODULE already in the environment. This breaks
 # if running multiple sites in the same mod_wsgi process. To fix this, use
 # mod_wsgi daemon mode with each site in its own daemon process, or use

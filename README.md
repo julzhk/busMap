@@ -1,11 +1,36 @@
-# bus mapper CBRM
+# bus_mapper
 
 faststart htmx + tailwindcss + django + postgres + docker template
 
 [![Built with Cookiecutter Django](https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter)](https://github.com/cookiecutter/cookiecutter-django/)
 [![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
-## Settings  
+see the readme in the dango project for more info
+
+To set up:
+* Check in the initial commit 
+* use pyenv to get python 3.11
+* install requirements
+* decide your project name &  swap out the project name for your project name. we'll write it like this <bus_mapper> from here on 
+
+
+
+* create a database called <bus_mapper> using:
+  `createdb <bus_mapper>
+* create a .env file with (minimally)
+  `DATABASE_URL=postgres://127.0.0.1:5432/<bus_mapper>`
+
+
+## Rename project:
+
+
+## Other handy commands:
+* manage.py migrate
+* manage.py tailwind install
+* tailwind start for monitor - use safari: less caching
+
+
+## Settings
 
 Moved to [settings](http://cookiecutter-django.readthedocs.io/en/latest/settings.html).
 
@@ -25,7 +50,7 @@ For convenience, you can keep your normal user logged in on Chrome and your supe
 
 Running type checks with mypy:
 
-    $ mypy htmx_starter
+    $ mypy bus_mapper
 
 ### Test coverage
 

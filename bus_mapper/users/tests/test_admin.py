@@ -1,6 +1,6 @@
 from django.urls import reverse
 
-from htmx_starter.users.models import User
+from bus_mapper.users.models import User
 
 
 class TestUserAdmin:

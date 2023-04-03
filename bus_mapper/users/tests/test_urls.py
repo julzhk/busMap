@@ -1,6 +1,6 @@
 from django.urls import resolve, reverse
 
-from htmx_starter.users.models import User
+from bus_mapper.users.models import User
 
 
 def test_detail(user: User):

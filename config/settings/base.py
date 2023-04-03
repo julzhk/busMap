@@ -6,8 +6,8 @@ from pathlib import Path
 import environ
 
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
-# htmx_starter/
-APPS_DIR = BASE_DIR / "htmx_starter"
+# bus_mapper/
+APPS_DIR = BASE_DIR / "bus_mapper"
 env = environ.Env()
 
 READ_DOT_ENV_FILE = env.bool("DJANGO_READ_DOT_ENV_FILE", default=False)
@@ -42,7 +42,7 @@ LOCALE_PATHS = [str(BASE_DIR / "locale")]
 DATABASES = {
     "default": env.db(
         "DATABASE_URL",
-        default="postgres:///htmx_starter",
+        default="postgres:///bus_mapper",
     ),
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
@@ -83,7 +83,7 @@ THIRD_PARTY_APPS = [
 TAILWIND_APP_NAME = 'tailwind_theme'
 
 LOCAL_APPS = [
-    "htmx_starter.users",
+    "bus_mapper.users",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -92,7 +92,7 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 # MIGRATIONS
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#migration-modules
-MIGRATION_MODULES = {"sites": "htmx_starter.contrib.sites.migrations"}
+MIGRATION_MODULES = {"sites": "bus_mapper.contrib.sites.migrations"}
 
 # AUTHENTICATION
 # ------------------------------------------------------------------------------
@@ -188,7 +188,7 @@ TEMPLATES = [
                 "django.template.context_processors.static",
                 "django.template.context_processors.tz",
                 "django.contrib.messages.context_processors.messages",
-                "htmx_starter.users.context_processors.allauth_settings",
+                "bus_mapper.users.context_processors.allauth_settings",
             ],
         },
     }
@@ -270,13 +270,13 @@ ACCOUNT_EMAIL_REQUIRED = True
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 ACCOUNT_EMAIL_VERIFICATION = "mandatory"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
-ACCOUNT_ADAPTER = "htmx_starter.users.adapters.AccountAdapter"
+ACCOUNT_ADAPTER = "bus_mapper.users.adapters.AccountAdapter"
 # https://django-allauth.readthedocs.io/en/latest/forms.html
-ACCOUNT_FORMS = {"signup": "htmx_starter.users.forms.UserSignupForm"}
+ACCOUNT_FORMS = {"signup": "bus_mapper.users.forms.UserSignupForm"}
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
-SOCIALACCOUNT_ADAPTER = "htmx_starter.users.adapters.SocialAccountAdapter"
+SOCIALACCOUNT_ADAPTER = "bus_mapper.users.adapters.SocialAccountAdapter"
 # https://django-allauth.readthedocs.io/en/latest/forms.html
-SOCIALACCOUNT_FORMS = {"signup": "htmx_starter.users.forms.UserSocialSignupForm"}
+SOCIALACCOUNT_FORMS = {"signup": "bus_mapper.users.forms.UserSocialSignupForm"}
 
 # Your stuff...
 # ------------------------------------------------------------------------------

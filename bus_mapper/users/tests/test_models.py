@@ -1,4 +1,4 @@
-from htmx_starter.users.models import User
+from bus_mapper.users.models import User
 
 
 def test_user_get_absolute_url(user: User):

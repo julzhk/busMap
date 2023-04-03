@@ -8,10 +8,10 @@ from django.http import HttpRequest, HttpResponseRedirect
 from django.test import RequestFactory
 from django.urls import reverse
 
-from htmx_starter.users.forms import UserAdminChangeForm
-from htmx_starter.users.models import User
-from htmx_starter.users.tests.factories import UserFactory
-from htmx_starter.users.views import (
+from bus_mapper.users.forms import UserAdminChangeForm
+from bus_mapper.users.models import User
+from bus_mapper.users.tests.factories import UserFactory
+from bus_mapper.users.views import (
     UserRedirectView,
     UserUpdateView,
     user_detail_view,

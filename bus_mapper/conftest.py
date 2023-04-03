@@ -1,7 +1,7 @@
 import pytest
 
-from htmx_starter.users.models import User
-from htmx_starter.users.tests.factories import UserFactory
+from bus_mapper.users.models import User
+from bus_mapper.users.tests.factories import UserFactory
 
 
 @pytest.fixture(autouse=True)

@@ -26,7 +26,7 @@ django.setup()
 
 # -- Project information -----------------------------------------------------
 
-project = "htmx_starter"
+project = "bus_mapper"
 copyright = """2023, julz"""
 author = "julz"
 

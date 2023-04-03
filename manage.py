@@ -24,8 +24,8 @@ if __name__ == "__main__":
         raise
 
     # This allows easy placement of apps within the interior
-    # htmx_starter directory.
+    # bus_mapper directory.
     current_path = Path(__file__).parent.resolve()
-    sys.path.append(str(current_path / "htmx_starter"))
+    sys.path.append(str(current_path / "bus_mapper"))
 
     execute_from_command_line(sys.argv)

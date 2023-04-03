@@ -1,6 +1,6 @@
 from django.urls import path
 
-from htmx_starter.users.views import (
+from bus_mapper.users.views import (
     user_detail_view,
     user_redirect_view,
     user_update_view,

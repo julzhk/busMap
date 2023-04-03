@@ -10,7 +10,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=_source
 set BUILDDIR=_build
-set APP=..\htmx_starter
+set APP=..\bus_mapper
 
 if "%1" == "" goto help
 

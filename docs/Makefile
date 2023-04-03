@@ -7,7 +7,7 @@ SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = .
 BUILDDIR      = ./_build
-APP = ../htmx_starter
+APP = ../bus_mapper
 
 
 .PHONY: help livehtml apidocs Makefile
